@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script>
+        // crea arreglo
+        let meses = ["Enero","Febrero","Marzo","Abril", 'Mayo'];
+        // imprimir arreglo
+        console.log(meses);
+        
+
+        let colores = ["Rojo", "Verde", "Azul"];
+
+        let colorSeleccionado= colores[2];
+        console.log(colores);
+        console.log('Color Seleccionado ->',colorSeleccionado);
+
+        colores[2] = 'Naranjo';
+        colorSeleccionado= colores[2];
+        console.log(colores);
+        console.log('Color Seleccionado ->',colorSeleccionado);
+
+        let cantidadElementos= colores.length;
+        console.log('Cantidad de Elementos -> ',cantidadElementos);
+
+        colores[3] = 'Purpura';
+        console.log(colores);
+        cantidadElementos= colores.length;
+        console.log('Cantidad de Elementos -> ',cantidadElementos);
+
+
+        let arreglo = [];
+
+        let largoArreglo1 = arreglo.push(1);
+        let largoArreglo2 =arreglo.push("Datos 2");
+        let largoArreglo3 =arreglo.push(true);
+        let largoArreglo4 =arreglo.push("Datos 4");
+        let largoArreglo5 =arreglo.push(4);
+        let largoArreglo6 =arreglo.push("Datos 6");
+        let largoArreglo7 =arreglo.push("Datos 7");
+        let largoArreglo8 =arreglo.push(8);
+        console.log(arreglo);
+        console.log(largoArreglo1);
+        console.log(largoArreglo2);
+        console.log(largoArreglo3);
+        console.log(largoArreglo4);
+        console.log(largoArreglo5);
+        console.log(largoArreglo6);
+        console.log(largoArreglo7);
+        console.log(largoArreglo8);
+        //// USO DE POP
+         console.log('//// USO DE POP //////');
+        let eliminado= arreglo.pop();
+        console.log('Último Elemento eliminado ->',eliminado);
+        console.log(arreglo);
+
+        eliminado= arreglo.pop();
+        console.log('Último Elemento eliminado ->',eliminado);
+        console.log(arreglo);
+
+        //// USO DE SHIFT
+         console.log('//// USO DE SHIFT //////');
+        eliminado= arreglo.shift();
+        console.log('Primer Elemento eliminado ->',eliminado);
+        console.log(arreglo);
+
+        eliminado= arreglo.shift();
+        console.log('Primer Elemento eliminado ->',eliminado);
+        console.log(arreglo)
+
+
+
+        //// USO de slice
+        console.log('//// USO de slice //////');
+        console.log(meses)
+       let resultdoSplice= meses.splice(1,2);
+        console.log('resultdo Splice ->',resultdoSplice);
+        console.log(meses)
+
+
+        /// USO del unshift
+        console.log('//// USO de unshift //////');
+        let arregloNros= [1,2,3];
+        console.log(arregloNros)
+        console.log(arregloNros.length);       
+
+        let nuevoLargo=arregloNros.unshift(4,5);
+        console.log(arregloNros)
+        console.log('nuevo Largo -->',nuevoLargo);   
+        
+        
+        /// USO del lastIndexOf
+        console.log('//// USO de lastIndexOf //////');
+        let nombres= ['Julian','Pedro','Marco','Ana','Graciela','Maria','Marta','Graciela'];
+        let index= nombres.lastIndexOf('Graciela');
+        console.log(nombres);
+        console.log('última posicion',index);
+        
+
+        /// USO del reverse
+        console.log('//// USO de lastIndexOf //////');
+        let abecedario= ['A','B','C','D'];
+        console.log(abecedario);
+        console.log(abecedario.reverse());
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
