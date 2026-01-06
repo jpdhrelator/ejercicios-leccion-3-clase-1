@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Playlist Spotify - Rock</title>
+    <script>
+        // Playlist Personal
+        // Tema: Playlist de Spotify con clásicos del Rock
+
+        // FASE 1: Lista Original
+        let playlist = [
+            "Bohemian Rhapsody",
+            "Hotel California",
+            "Stairway to Heaven",
+            "Sweet Child O' Mine"
+        ];
+        console.log("Playlist inicial:", playlist);
+
+        // Mostrar la tercera canción
+        console.log("Tercera canción:", playlist[2]);
+
+        // Mostrar cantidad de canciones
+        console.log("Cantidad de canciones:", playlist.length);
+
+        // FASE 2: Movimientos en la playlist
+
+        // Agregar una canción al final
+        console.log("Se agregará la canción: Smoke on the Water");
+        playlist.push("Smoke on the Water");
+        console.log("Playlist después de agregar:", playlist);
+
+        // Eliminar la última canción
+        console.log("Se eliminará la última canción:", playlist[playlist.length - 1]);
+        playlist.pop();
+        console.log("Playlist después de eliminar la última:", playlist);
+
+        // Eliminar la primera canción
+        console.log("Se eliminará la primera canción:", playlist[0]);
+        playlist.shift();
+        console.log("Playlist después de eliminar la primera:", playlist);
+
+        // FASE 3: Cambios específicos
+
+        // Reemplazar la segunda canción
+        console.log(
+            "Se reemplazará la canción:",
+            playlist[1],
+            "por Back In Black"
+        );
+        playlist[1] = "Back In Black";
+        console.log("Playlist después del reemplazo:", playlist);
+
+        // Insertar una canción en la mitad
+        let mitad = Math.floor(playlist.length / 2);
+        console.log(
+            "Se insertará la canción 'COMODÍN Rock' en la posición:",
+            mitad
+        );
+        playlist.splice(mitad, 0, "COMODÍN Rock");
+        console.log("Playlist después de insertar comodín:", playlist);
+
+        // FASE 4: Fusión de playlists
+
+        // Playlist extra
+        let playlistExtra = [
+            "Dream On",
+            "Another Brick in the Wall",
+            "Born to Be Wild"
+        ];
+        console.log("Playlist extra encontrada:", playlistExtra);
+
+        // Unir listas
+        console.log("Se unirán la playlist principal y la playlist extra");
+        let playlistFinal = playlist.concat(playlistExtra);
+        console.log("Playlist completa:", playlistFinal);
+
+        // FASE 5: Reporte final
+        console.log("=================================");
+        console.log("Playlist final:", playlistFinal);
+        console.log(
+            "La playlist final tiene",
+            playlistFinal.length,
+            "canciones"
+        );
+        console.log(
+            "Última canción de la playlist:",
+            playlistFinal[playlistFinal.length - 1]
+        );
+        console.log("=================================");
+    </script>
+</head>
+<body>
+</body>
+</html>
