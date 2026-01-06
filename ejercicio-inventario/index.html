@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de inventario Personal</title>
+</head>
+<body>
+    <script>
+
+        //Inventario de Almacen de Abarrotes
+        let inventario = ["bebidas","legumbres","carne","leche"]; // variable definida con su arreglo. El arreglo tiene 4 elementos.
+       
+        console.log('Inventario de Almacen de Abarrotes'); //imprime en la concola el tipo de inventario.
+        console.log('Tercer Elemento del inventario: ' + inventario[2]); //imprime en la consola el tercer elemento de mi arreglo, que ocupa el indice (2)
+        console.log('Cantidad de Elementos del inventario: ' + inventario.length);//imprime en la consola la cantidad de elementos del inventario.
+        
+        //Nueva Adquisición del inventario
+        inventario.push("cervezas"); //nuevo elemento del arreglo, ocupara la ultima posicion.
+        console.log(inventario); //imprime en la consola el arreglo completo.
+
+        //Ultimo elemento del inventario removido
+        inventario.pop();// se remueve el ultimo elemento del inventario.
+        console.log(inventario); //se imprime en la consola el inventario.
+
+        //primer elemento del inventario removido
+        inventario.shift();// remueve el primer elemento del arreglo.
+        console.log(inventario); //imprime en la consola.
+
+        //cambiar un elemento del inventario
+        inventario[1] = "tomates"; //se cambia el segundo elemento del inventario (carne) por el elemento "tomate"
+        console.log(inventario);//se imprime en la consola el cambio.
+
+        //Nuevo arreglo incorporado al inventario
+        let extra = ["yogurt","papas","arroz"]; //incializacion de nueva variable con  3 elementos en el arreglo.
+        let inventarioTotal = [...inventario, ...extra]; //union de ambos arreglos.
+        console.log(inventarioTotal); //imprime en la consola el nuevo arreglo.
+
+        //lista final de inventario
+        console.log('Inventario de Productos: ' + inventarioTotal); //arreglo final
+        console.log('Total de Productos: ' + inventarioTotal.length);//total de elementos 
+        console.log('Ultimo Producto del Inventario: ' + inventarioTotal[5]); //imprime en la consola el ultimo elemento del inventario
+    
+    </script>
+    
+</body>
+</html>
