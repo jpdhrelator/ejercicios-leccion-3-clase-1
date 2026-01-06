@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>uso del array</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <img src="https://www.svgrepo.com/show/276264/pokeball-pokemon.svg" alt="pokeball-pokemon">
+     <script>
+      //INVENTARIO DEL ENTRENADOR POKÉMON
+
+      console.log("NOS PREPARAMOS PARA CAPTURAR Y COMBATIR POKÉMON MUY FUERTES Y NECESITAMOS REVISAR SI LLEVAMOS LO NECESARIO")
+
+// Definimos la colección inicial con 4 productos del bolso del entrenador
+let inventario = ["Super Pociones", "Pokébolas", "Antídotos", "Revives"];
+
+// Preguntamos por el tercer producto (índice 2)
+console.log("Consulta del tercer objeto: " + inventario[2]); 
+
+// Reporte inicial: Mostramos la cantidad total de artículos
+console.log("Cantidad inicial en el inventario: " + inventario.length); 
+console.log("Estado actual:", inventario);
+
+// FASE 2
+
+inventario.push("Piedra Fuego"); 
+console.log("Evento: Has encontrado una Piedra Fuego.", inventario);
+
+inventario.pop(); 
+console.log("Evento: La Piedra Fuego se consumió al evolucionar a tu Pokémon.", inventario);
+
+inventario.shift(); 
+console.log("Evento: Consumiste la Super Poción.", inventario);
+
+// FASE 3
+
+inventario[1] = "Superbolas"; 
+console.log("Evento: Has cambiado las Pokébolas por Superbolas.", inventario);
+
+let mitad = Math.floor(inventario.length / 2);
+inventario.splice(mitad, 0, "Elixir"); 
+console.log("Evento: Has insertado un Elixir en la posición " + mitad, inventario);
+
+//FASE 4: Nuevo elemento
+
+let extra = ["Hiperpoción", "Cura Total", "Master Ball"];
+
+// Concatenamos el producto y lo agregamos al inventario
+let inventarioTotal = inventario.concat(extra);
+console.log("Evento: ¡Encontraste un objeto misterioso!", inventarioTotal);
+
+
+// FASE 5: inventario total
+
+console.log("--- REPORTE FINAL DEL ENTRENADOR ---");
+console.log("Inventario Total:", inventarioTotal);
+
+// total de objetos
+console.log("El inventario final cuenta con " + inventarioTotal.length + " elementos.");
+
+// Último objeto de la lista (el más importante)
+let ultimoObjeto = inventarioTotal[inventarioTotal.length - 1];
+console.log("El objeto más valioso al final del bolso es: " + ultimoObjeto);
+
+  console.log('FELICIDADES! YA TIENES LO NECESARIO PARA ATRAPAR AL POKÉMON LEGENDARIO!')
+
+ 
+     </script>
+    </body>
+</html>
